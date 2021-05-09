@@ -1,3 +1,20 @@
+function loginApp(){
+  const d = document;
+  if(d.getElementById("usuario").value === "test"){
+    if(d.getElementById("password").value === "xmltest"){
+      d.getElementById("login0").classList.add("hide")
+      d.getElementById("login1").classList.remove("hide")
+      d.getElementById("login2").classList.remove("hide")
+      d.getElementById("login3").classList.remove("hide")
+      d.getElementById("login4").classList.remove("hide")
+    }else{
+      d.getElementById("forma").reset();
+    }
+  }else{
+    d.getElementById("forma").reset();
+  }
+}
+
 function downloadFile() {
     const d = document;
     let assetId = d.getElementById("assetId").value;
