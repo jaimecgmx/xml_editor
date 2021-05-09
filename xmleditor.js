@@ -156,7 +156,7 @@ function downloadFile() {
 <App_Data App="MOD" Name="Type" Value="poster" />
 <App_Data App="MOD" Name="PType" Value="2" />
 </Metadata>
-<Content Value="${$poster2}.jpg" />
+<Content Value="${poster2}.jpg" />
 </Asset>
 <Asset>
 <Metadata>
