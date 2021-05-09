@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/xmleditor.css">
+    <title>XML Editor</title>
+</head>
+<body>
+    <h1 class="form-h1">XML Editor</h1>
+    <h3 class="form-h1">Metadata</h3>
+    <div class="wrapper">
+        <div class="container">
+        <form class="xml-form">
+            <span>Asset ID</span>
+            <input type="number" id="assetId" required>
+            <span>Tittle</span>
+            <input type="text" id="title" required>
+            <span>Year</span>
+            <input type="text" id="year" class="maskyear" required>
+            <span>Sumary</span>
+            <input type="text" id="summary" required>
+            <span>Licensing Window Start</span>
+            <input type="text" id="licenseStart" class="maskdate" required>
+            <span>Licensing Window End</span>
+            <input type="text" id="licenseEnd" class="maskdate" required>
+            <span>Runtime</span>
+            <input type="text" id="runtime" class="masktime" required>
+        </form>
+        </div>
+        <div class="container">
+        <form class="xml-form">
+            <span>Actors</span>
+            <input type="text" id="actors" required>
+            <span>Director</span>
+            <input type="text" id="director" required>
+            <span>Writers</span>
+            <input type="text" id="writers" required>
+            <span>Rating</span>
+            <select id="rating" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+            <span>Studio</span>
+            <select id="studio" required>
+                <option value="73">PARAMOUNT</option>
+                <option value="02">WARNER</option>
+            </select>
+            <span>Languages</span>
+            <select id="lang" required>
+                <option value="en">en</option>
+                <option value="es">es</option>
+            </select>
+            <span>Subtitle</span>
+            <select id="subs" required>
+                <option value="es">es</option>
+                <option value="en">en</option>
+            </select>
+        </form>
+        </div>
+        <div class="container">
+        <form class="xml-form">
+            <span>Genre 1</span>
+            <input type="text" id="genre1" required>
+            <span>Genre 2</span>
+            <input type="text" id="genre2" required>
+            <span>Category 1</span>
+            <select id="category1" required>
+                <option value="Recién Agregado">Recién Agregado</option>
+            </select>
+            <span>Category 2</span>
+            <select id="category2" required>
+                <option value="Recomendado">Recomendado</option>
+            </select>
+            <span>Category 3</span>
+            <select id="category3" required>
+                <option value="Drama">Drama</option>
+                <option value="Suspenso">Suspenso</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Terror">Terror</option>
+            </select>
+        </form>
+        </div>
+    </div>
+    <h3 class="form-h1">Encoding</h3>
+    <div class="wrapper">
+        <div class="container">
+        <form class="xml-form">
+            <span>Asset ID</span>
+            <input type="number" id="assetId" required>
+            <span>Tittle</span>
+            <input type="text" id="title" required>
+            <span>Year</span>
+            <input type="text" id="year" class="maskyear" required>
+        </form>
+        </div>
+        <div class="container">
+        <form class="xml-form">
+            <span>Actors</span>
+            <input type="text" id="actors" required>
+            <span>Director</span>
+            <input type="text" id="director" required>
+            <span>Writers</span>
+            <input type="text" id="writers" required>
+        </form>
+        </div>
+        <div class="container">
+        <form class="xml-form">
+            <span>Content ts</span>
+            <input type="text" id="content" required>
+            <span>Poster jpeg 1</span>
+            <input type="text" id="poster1" required>
+            <span>Poster jpeg 2</span>
+            <input type="text" id="poster2" required>
+        </form>
+        <button class="xml-button" onclick="downloadFile()">Generate XML</button>
+        </div>
+    </div>
+<script src="../js/module/jquery-3.6.0.min.js"></script>
+<script src="../js/module/jquery.mask.js"></script>
+<script src="../js/xmleditor.js"></script>
+</body>
+</html>
