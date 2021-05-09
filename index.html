@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./xmleditor.css">
+    <link rel="stylesheet" href="../css/xmleditor.css">
     <title>XML Editor</title>
 </head>
 <body>
     <h1 class="form-h1">XML Editor</h1>
-    <h3 class="form-h1">Metadata</h3>
-    <div class="wrapper">
+    <div id="login0" class="contenedor">
+        <h2>Bienvenido</h2>
+        <form id="forma">
+            <div class="elemento">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required/>
+            </div>
+            <div class="elemento">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required/>
+            </div>
+        </form>
+        <div class="elemento">
+            <button class="xml-login" onclick="loginApp()">Login</button>
+        </div>
+    </div>
+    <h3 id="login1" class="form-h1 hide">Metadata</h3>
+    <div id="login2" class="wrapper hide">
         <div class="container">
         <form class="xml-form">
             <span>Asset ID</span>
@@ -85,26 +101,26 @@
         </form>
         </div>
     </div>
-    <h3 class="form-h1">Encoding</h3>
-    <div class="wrapper">
+    <h3 id="login3" class="form-h1 hide">Encoding</h3>
+    <div id="login4" class="wrapper hide">
         <div class="container">
         <form class="xml-form">
-            <span>Asset ID</span>
-            <input type="number" id="assetId" required>
-            <span>Tittle</span>
-            <input type="text" id="title" required>
-            <span>Year</span>
-            <input type="text" id="year" class="maskyear" required>
+            <span>Xview</span>
+            <input type="text" id="enc1" required>
+            <span>IPTV</span>
+            <input type="text" id="enc2" required>
+            <span>NGV</span>
+            <input type="text" id="enc3" required>
         </form>
         </div>
         <div class="container">
         <form class="xml-form">
-            <span>Actors</span>
-            <input type="text" id="actors" required>
-            <span>Director</span>
-            <input type="text" id="director" required>
-            <span>Writers</span>
-            <input type="text" id="writers" required>
+            <span>Video</span>
+            <input type="text" id="encoding1" required>
+            <span>Audio</span>
+            <input type="text" id="encoding2" required>
+            <span>Subtitle</span>
+            <input type="text" id="encoding3" required>
         </form>
         </div>
         <div class="container">
@@ -119,8 +135,8 @@
         <button class="xml-button" onclick="downloadFile()">Generate XML</button>
         </div>
     </div>
-<script src="./jquery-3.6.0.min.js"></script>
-<script src="./jquery.mask.js"></script>
-<script src="./xmleditor.js"></script>
+<script src="../js/module/jquery-3.6.0.min.js"></script>
+<script src="../js/module/jquery.mask.js"></script>
+<script src="../js/xmleditor.js"></script>
 </body>
 </html>
