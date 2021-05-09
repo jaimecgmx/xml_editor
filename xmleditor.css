@@ -1,5 +1,59 @@
+body{
+    background: url(fondo.png), linear-gradient(#7209b2, #3f37c0)
+}
+
 .form-h1 {
     text-align: center;
+    color: #ddd;
+}
+
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+
+}
+.contenedor .elemento label{
+    color:#fff;
+}
+
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contenedor .elemento {
+  text-align: center;
+}
+
+.contenedor .elemento button {
+    background-color: #f72585;
+    width: 35%;
+    border: none;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ddd;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
 }
 
 .wrapper{
@@ -9,9 +63,40 @@
     padding: 0px 0%;
 }
 
-.xml-form label {
+.container {
+    margin: 0px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.xml-form span {
     margin-top: 2rem;
-    color: red;
+    color: #ddd;
+}
+
+.xml-form input {
+    width: 100%;
+    padding: 0.2rem 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.xml-form select {
+    width: 100%;
+    padding: 0.2rem 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .xml-form {
@@ -39,7 +124,7 @@
 }
 
 .xml-button {
-    padding: 0.3rem;
+    padding: 0.5rem;
     margin: 1rem auto;
     margin-left: auto;
     margin-right: auto;
@@ -49,6 +134,12 @@
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    background-color: #222;
+    background-color: #4cc9f0;
     color: #ddd;
+    border: none;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
 }
