@@ -71,10 +71,20 @@ body{
     padding: 0px 0%;
 }
 
+.xml-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 57%;
+}
+
 @media screen and (max-width: 900px){
     .wrapper{
         grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
         padding: 0px 3%;
+    }
+    
+    .xml-form {
+        width: 80%;
     }
 }
 
@@ -112,12 +122,6 @@ body{
     border-right: 1px solid #fff;
     margin-bottom: 1rem;
     font-size: 1rem;
-}
-
-.xml-form {
-    margin-left: auto;
-    margin-right: auto;
-    width: 57%;
 }
 
 .xml-form > * {
